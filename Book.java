@@ -1,5 +1,14 @@
+
+
+
+
+
+
+
+
 /**
- * A class that maintains information on a book.
+ * 
+ *A class that maintains information on a book.
  * This might form part of a larger application such
  * as a library system, for instance.
  *
@@ -87,7 +96,11 @@ class Book
      */
     public void setRefNumber(String ref)
     {
+        int length = ref.length();
+        if (length >= 3)
         refNumber = ref;
+        else
+        System.out.println("Error; need a longer reference number");
     }
     
     /**
